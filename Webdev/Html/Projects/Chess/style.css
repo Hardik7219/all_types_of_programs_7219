@@ -1,0 +1,94 @@
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chessboard container */
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1;
+  border: 4px solid #2d3748; /* Dark border around the chessboard */
+}
+
+/* Square styling */
+.square {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #2d3748; /* Border between the squares */
+  transition: background-color 0.3s ease;
+}
+
+/* Light and dark square color (like a real chessboard) */
+.square.light {
+  background-color: #f0d9b5; /* Light beige (chessboard light square) */
+}
+
+.square.dark {
+  background-color: #b58863; /* Dark brown (chessboard dark square) */
+}
+
+/* Hover effect for squares */
+.square:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Slight grey hover effect */
+}
+
+/* Piece styling */
+.piece {
+  font-size: 2rem;
+  color: #2d3748; /* Dark grey color for pieces */
+  user-select: none;
+  pointer-events: none; /* Makes sure the piece can't be clicked */
+  transition: transform 0.2s ease;
+}
+
+/* Selected piece highlight */
+.square.selected {
+  border: 2px solid #4a5568; /* Darker grey border for selected square */
+}
+
+.piece.selected {
+  transform: scale(1.2);
+}
+
+/* Hover effect for pieces */
+.square:hover .piece {
+  transform: scale(1.2);
+}
+
+/* For the board size responsiveness */
+@media (max-width: 768px) {
+  #chessboard {
+    max-width: 400px;
+  }
+
+  .piece {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #chessboard {
+    max-width: 320px;
+  }
+
+  .piece {
+    font-size: 1.2rem;
+  }
+}
