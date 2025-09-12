@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+  var a,b,c,d,e,f,g,t,p;
+  function p1()
+  {
+     a=f1.t1.value;
+     if(isNaN(a)==false)
+     {
+       f1.t1.value=" ";
+       f1.t1.focus();
+     }
+  }  
+  function p2()
+  {
+     b=f1.t2.value;
+     if(isNaN(b)==true  || f1.t2.value>=100 || f1.t2.value<0)
+     {
+       f1.t2.value=" ";
+       f1.t2.focus();
+     }
+  }
+  function p3()
+  {
+     c=f1.t3.value;
+     if(isNaN(c)==true  || f1.t3.value>=100)
+     {
+       f1.t3.value=" ";
+       f1.t3.focus();
+     }
+  }
+  function p4() 
+{ 
+   d=f1.t4.value;
+  if (isNaN(d) == true  || f1.t4.value>=100)
+  {
+    f1.t4.value = " ";
+    f1.t4.focus();
+  }
+}
+function p5()
+{
+  e = f1.t5.value;
+  if (isNaN(e) == true    || f1.t5.value>=100)
+  {
+    f1.t5.value = " ";
+    f1.t5.focus();
+  }
+}
+function p6()
+{
+  f= f1.t6.value;
+  if (isNaN (f) == true  || f1.t6.value>100)
+  {
+    f1.t6.value = " ";
+    f1.t6.focus();
+  }
+}
+function p7()
+{
+  g= f1.t7.value;
+  if (isNaN(g) == true  || f1.t7.value>100)
+  {
+    f1.t7.value = " ";
+    f1.t7.focus();
+  }
+}
+function p8()
+{
+  t=Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g);
+  
+    f1.t8.value=t;
+    f1.t9.value=t/6;
+    
+    var x=f1.t9.value;
+    
+    if(x>70)
+    {
+       f1.t10.value=("First class");
+    }
+    else if(x>=50 && x<=69)
+    {
+       f1.t10.value=("Second class");
+    }
+    else if(x>=30 && x<=49)
+    {
+       f1.t10.value=("Pass class");
+    }
+}
+  </script>
+</head>
+<body>
+  <center>
+  <h3 style="color:blue">--::Result::--</h3>
+<form name="f1">
+<table border="1">
+      <tr>
+        <th style="color:blue">Name</th>
+     <td>:<input type="text" name="t1"   onblur="p1()"></td>
+      </tr>
+      <tr>
+     <th style="color:green">Oracle</th>
+     <td>:<input type="text" name="t2" onblur="p2()"></td>
+   </tr>
+      <tr>
+     <th style="color:green">C++</th>
+     <td>:<input type="text" name="t3"     onblur="p3()"></td>
+   </tr>
+      <tr>
+     <th style="color:green">E-Commerce</th>
+     <td>:<input type="text" name="t4" onblur="p4()"></td>
+   </tr>
+      <tr>
+     <th style="color:green">Sad</th>
+     <td>:<input type="text" name="t5" onblur="p5()"></td>
+   </tr>
+      <tr>
+     <th style="color:green">Statics</th>
+     <td>:<input type="text" name="t6" onblur="p6()"></td>
+   </tr>
+      <tr>
+     <th style="color:green">Se</th>
+     <td>:<input type="text" name="t7" onblur="p7()"></td>
+   </tr>
+      <tr>
+     <th style="color:blue">Total</th>
+     <td>:<input type="text" name="t8" onfocus="p8()"></td>
+   </tr>
+      <tr>
+     <th style="color:blue">Percentage</th>
+     <td>:<input type="text" name="t9"
+     ></td>
+   </tr>
+      <tr>
+     <th style="color:blue">Class</th>
+     <td>:<input type="text" name="t10"></td>
+   </tr>
+</center>     
+</table>
+</form>
+</body>
+</html>

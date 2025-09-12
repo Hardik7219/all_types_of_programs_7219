@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script type="text/javascript">
+    function f()
+    {
+      var a=f1.t1.value;
+      document.body.style.backgroundColor=a;
+    }
+    
+  </script>
+</head>
+
+<body>
+  <form name="f1">
+  <input type="text" name="t1" onblur="f()">
+  <input type="button" onclick="f()">
+  </form>
+</body>
+
+</html>

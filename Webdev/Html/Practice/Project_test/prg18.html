@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    function p()
+    {
+        var No=(f1.t1.value);
+        var Name=(f1.t2.value);
+        var Gender=(f1.r1.value);
+        var A1;
+        var A2;
+	var A3;
+	
+	if(f1.c1.checked==true)
+	{
+
+	A1=(f1.c1.value);
+
+	}
+	if(f1.c2.checked==true)
+	{
+
+	A2=(f1.c2.value);
+
+	}
+	if(f1.c3.checked==true)
+	{
+
+	A3=(f1.c3.value);
+
+	}
+
+
+    var output= "No: " + No + "\n" +
+                          "Name:  " + Name + "\n" +
+                             "Gender:: " + Gender + "\n" +
+                             "Ability:: " + A1+"\n" + "Ability::" + A2 +"\n" ;
+                             
+        f1.g1.value=output;                   
+    }
+
+    </script>
+</head>
+<body>
+<form name="f1" align="center">
+  <u><h3>User Login Form</h3></u>
+  Registration No:<input type="text" name="t1"><br><br>
+  Name: <input type="text" name="t2"><br><br>
+  Gender: <input type="radio" name="r1" value="Male">Male
+    <input type="radio" name="r1" value="Female">Female <br>
+    English Ability:<input type="checkbox" name="c1" value="Read">Read
+    <input type="checkbox" name="c2" value="Write">Write 
+    <input type="checkbox" name="c3" value="Speak">Speak <br><br>
+  
+  <input type="submit" value="submit">
+  <input type="button" value="click" onclick="p()">
+  <input type="Reset" value="Reset">
+  <br><br>
+  
+  <textarea style="text-align:center" rows="7" cols="30" name="g1">
+
+  </textarea>
+</form>
+</body>
+</html>

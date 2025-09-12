@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic Example</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .color-toggle { color: blue; }
+        .new-color { color: red; }
+    </style>
+</head>
+<body>
+    <h1 id="message" class="color-toggle">Hello, World!</h1>
+    <button id="changeButton">Click Me!</button>
+
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function() {
+            // Button click event handler
+            $('#changeButton').click(function() {
+                // Change the text content
+                $('#message').text('jQuery makes web development fun!');
+                
+                // Toggle CSS classes for color change
+                $('#message').toggleClass('color-toggle new-color');
+                
+                // Fade out and fade in animation
+                $('#message').fadeOut(500).fadeIn(500);
+            });
+        });
+    </script>
+</body>
+</html>
