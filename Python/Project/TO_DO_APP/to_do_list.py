@@ -27,7 +27,7 @@ def delete_task():
 
 #SAVE FILE
 def save_file():
-	with open ("/storage/emulated/0/programming/python/task.txt","w") as file:
+	with open (".\task.txt","w") as file:
 		for i in range(field.size()):
 			item=field.get(i)
 			file.write(item+"\n")

@@ -8,13 +8,26 @@ let fromSelect=document.querySelector("#from1");
 fromFlag.src="https://flagsapi.com/IN/flat/64.png";
 function chgFlag()
 {
-    for(let i in countryLists)
+  for(let i in countryLists)
     {
-        console.log(i)
-        let option=document.createElement("option");
-        option.value=i;
-        fromSelect.appendChild(option);
+     
+        let options=document.createElement("option");
+        options.innerText=i;
+        fromSelect.appendChild(options);
+
     }
+    for (let j=0; j<fromSelect.lenght; j++)
+    {
+        if(fromSelect.options[j].selected==true)
+        {
+            console.log(fromSelect.options[j].innerText);
+            let countryCode=fromSelect.options[j].innerText;
+            fromFlag.src=`https://flagsapi.com/${countryCode}/flat/64.png`;
+            console.log(fromFlag.src);
+        }
+    }
+    
+
 }
 chgFlag();
 

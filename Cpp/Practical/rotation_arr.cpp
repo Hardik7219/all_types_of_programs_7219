@@ -1,33 +1,33 @@
 #include <iostream>
 using namespace std;
 
-int main() 
+int main()
 {
-    int arr[5],n;
-    cout<<"Enter no:";
-    cin>>n;
-    for(int i=0; i<n; i++)
+    int arr[5], n;
+    cout << "Enter no:";
+    cin >> n;
+    for (int i = 0; i < n; i++)
     {
-        cout<<"Enter arra:";
-        cin>>arr[i];
+        cout << "Enter arra:";
+        cin >> arr[i];
     }
-    int ar2[10],temp=0;;
-    
-    for(int i=0; i<n; i++)
+    int ar2[10], temp = 0;
+    ;
+
+    for (int i = 0; i < n; i++)
     {
-    cout<<"Enter second arr:";
-    cin>>ar2[i];
-              
+        cout << "Enter second arr:";
+        cin >> ar2[i];
     }
-    for(int i=0; i<n; i++) 
+    for (int i = 0; i < n; i++)
     {
-    if(ar2[i]==arr[n-i-1]) 
-    {
-        temp++;
+        if (ar2[i] == arr[n - i - 1])
+        {
+            temp++;
+        }
     }
-    }
-    if(temp==n)
+    if (temp == n)
     {
-   cout<<"yes:";
+        cout << "yes:";
     }
 }

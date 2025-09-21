@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void main()
+{
+  int n, k = 6, *l, *p, sum = 0;
+  printf("enter roll:");
+  scanf("%d", &n);
+  p = &n;
+  l = &k;
+  sum = *p + *l;
+  printf("%d", sum);
+}

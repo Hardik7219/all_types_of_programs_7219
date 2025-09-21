@@ -1,31 +1,31 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     int n;
     std::cout << "Enter n: ";
     std::cin >> n;
 
-    for (int i = 0; i <= n; i++) 
+    for (int i = 0; i <= n; i++)
     {
-        for(int k=0; k<=n-i; k++) 
+        for (int k = 0; k <= n - i; k++)
         {
-        std::cout<<" ";
+            std::cout << " ";
         }
-        
-        for(int p=0; p<=i; p++)
+
+        for (int p = 0; p <= i; p++)
         {
-            if( p==n || p==0 || p==i || i==0 || i==n)
+            if (p == n || p == 0 || p == i || i == 0 || i == n)
             {
-            std::cout<<" *";
+                std::cout << " *";
             }
             else
             {
-            std::cout<<"  ";
+                std::cout << "  ";
             }
         }
-        
 
         std::cout << "\n";
     }
-     return 0;
+    return 0;
 }

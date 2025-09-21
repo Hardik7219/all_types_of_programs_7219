@@ -1,28 +1,27 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     int n;
     std::cout << "Enter n: ";
     std::cin >> n;
 
-    for (int i = 0; i <= n; i++) 
+    for (int i = 0; i <= n; i++)
     {
-        
-        
-        for(int p=0; p<=n; p++)
+
+        for (int p = 0; p <= n; p++)
         {
-            if( p==n-i || p==i)
+            if (p == n - i || p == i)
             {
-            std::cout<<"*";
+                std::cout << "*";
             }
             else
             {
-            std::cout<<" ";
+                std::cout << " ";
             }
         }
-        
 
         std::cout << "\n";
     }
-     return 0;
+    return 0;
 }

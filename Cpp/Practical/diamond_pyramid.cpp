@@ -1,34 +1,35 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     int n;
     std::cout << "Enter n: ";
     std::cin >> n;
 
-    for (int i = 0; i <= n; i++) 
+    for (int i = 0; i <= n; i++)
     {
-        for(int j=0; j<n-i; j++)
+        for (int j = 0; j < n - i; j++)
         {
-            std::cout<<" ";
+            std::cout << " ";
         }
-        for(int k=0; k<i; k++)
+        for (int k = 0; k < i; k++)
         {
-            std::cout<<" *";
+            std::cout << " *";
         }
 
         std::cout << "\n";
     }
-    for(int i=1; i<n; i++)
+    for (int i = 1; i < n; i++)
     {
-        for(int j=0; j<i; j++)
+        for (int j = 0; j < i; j++)
         {
-        std::cout<<" ";
+            std::cout << " ";
         }
-        for(int k=0; k<n-i; k++)
+        for (int k = 0; k < n - i; k++)
         {
-        std::cout<<" *";
+            std::cout << " *";
         }
-        std::cout<<"\n";
+        std::cout << "\n";
     }
     return 0;
 }
