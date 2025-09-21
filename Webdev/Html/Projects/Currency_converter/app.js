@@ -22,8 +22,9 @@ function chgFlag()
         {
             console.log(fromSelect.options[j].innerText);
             let countryCode=fromSelect.options[j].innerText;
+
             fromFlag.src=`https://flagsapi.com/${countryCode}/flat/64.png`;
-            console.log(fromFlag.src);
+            
         }
     }
     
