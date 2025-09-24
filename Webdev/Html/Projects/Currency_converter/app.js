@@ -1,65 +1,22 @@
+let amount = document.querySelector(".text");
+let fromFlag = document.querySelector(".from_flag");
+let flagUrl = "https://flagsapi.com/us/flat/64.png";
+let fromSelect = document.querySelector("#from1");
+let sel1 = document.getElementsByClassName("op");
 
-
-let amount= document.querySelector(".text");
-let fromFlag=document.querySelector(".from_flag");
-let flagUrl="https://flagsapi.com/us/flat/64.png";
-let fromSelect=document.querySelector("#from1");
 //flagchange
-fromFlag.src="https://flagsapi.com/IN/flat/64.png";
-function chgFlag()
-{
-  for(let i in countryLists)
-    {
-     
-        let options=document.createElement("option");
-        options.innerText=i;
-        fromSelect.appendChild(options);
-
+fromFlag.src = "https://flagsapi.com/IN/flat/64.png";
+function chgFlag() {
+  for (let j=0; j<2; j++) {
+    for (let i in countryLists) {
+      let options = document.createElement("option");
+      options.innerText = i;
+      options.value = i;
+      sel1[j].appendChild(options);
     }
-    for (let j=0; j<fromSelect.lenght; j++)
-    {
-        if(fromSelect.options[j].selected==true)
-        {
-            console.log(fromSelect.options[j].innerText);
-            let countryCode=fromSelect.options[j].innerText;
-
-            fromFlag.src=`https://flagsapi.com/${countryCode}/flat/64.png`;
-            
-        }
-    }
-    
-
+  }
+  sel1[0].addEventListener("change",(evt)=>{
+    console.log(evt.target);
+  });
 }
 chgFlag();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//exchange api
-// var myHeaders = new Headers();
-// myHeaders.append("apikey", "yRZWhBV5RxvtE42SRorN4wG3ydIzZzj0");
-
-// var requestOptions = {
-//   method: 'GET',
-//   redirect: 'follow',
-//   headers: myHeaders
-// };
-
-// fetch("https://api.apilayer.com/exchangerates_data/convert?to={ind}&from={usd}&amount={100}", requestOptions)
-//   .then(response => response.text())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
