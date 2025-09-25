@@ -5,42 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-<div class="cantenar">
-  <h4>Currancy conventer</h4>
-  <input type="text" class="text" value="100">
-  <div class="system">
-    <form>
-      <div class="from">
-        <p id="f">From</p>
-        <img class="from_flag">
-        <dic class="selects">
-          
-          <select class="op" id="from1" name="frm"></select>
-        </dic>
-      </div>
-      <i class="fa-solid fa-arrow-right-arrow-left"></i>
-      <div class="to">
-        <p id="t">TO</p>
-        <img src="https://flagsapi.com/IN/flat/64.png">
-        <div class="selects">
-          <select class="op" name="t">
-            <option id="usd" value="USA"></option>
-            <option id="inr" value="IN"></option>
-          </select>
+  <div class="cantenar">
+    <h4>Currancy conventer</h4>
+    <input type="text" class="text" value="100">
+    <div class="system">
+      <form>
+        <div class="from">
+          <p id="f">From</p>
+          <img class="from_flag" src="https://flagsapi.com/US/flat/64.png">
+          <dic class="selects">
+            <select class="op" id="from1" name="frm"></select>
+          </dic>
         </div>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="to">
+          <p id="t">TO</p>
+          <img class="to_flag" src="https://flagsapi.com/IN/flat/64.png">
+          <div class="selects">
+            <select class="op" name="t"></select>
+          </div>
+        </div>
+
+      </form>
+      <div class="result">
+        <p id="msg">convert=
+        <p id="val"></p>
+        </p>
+        <input value="convert" type="button" id="btn">
+      </div>
     </div>
-    </form>
-    <p id="c">convert=<p id="val"></p></p>
-    <input value="convert" type="button" id="btn">
   </div>
-</div>
- <script src="codes.js"></script> 
-<script src="app.js"></script>
+  <script src="codes.js"></script>
+  <script src="app.js"></script>
 
 </body>
 
