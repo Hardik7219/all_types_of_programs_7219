@@ -1,0 +1,75 @@
+:root{
+    --gaya-font: 'Nunito Sans', sans-serif;
+    --gaya-font2: 'Caveat', cursive;
+    --gaya-font3: 'Nerko One', cursive;
+}
+.first{
+    background-image: url('https://i.ibb.co/Y7gpGGwC/hiya.gif');
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+.second{
+    background-image: url('https://i.ibb.co/LMwNNZm/wortel.gif');
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    
+}
+
+.First{
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    animation: add 0.5s ease-in-out;
+    background-color: black;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);
+    margin-bottom: 20px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.Second{
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    animation: add 0.5s ease-in-out;
+    margin-bottom: 20px;
+    background-color: black;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);
+}
+.Main{
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    animation: add 0.5s ease-in-out;
+    margin-bottom: 20px;
+    border-left: 2px solid #b40c0c;
+    border-right: 2px solid #b40c0c;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);
+}
+.Main input{
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    animation: add 0.5s ease-in-out;
+}    
+.Type1{
+    font-family:var(--gaya-font1);
+    text-shadow: 0px 2px 2px rgba(221, 239, 255, 0.8);
+}
+.btn{
+    text-shadow: 0px 2px 2px rgba(238, 37, 37, 0.8);
+}
+@keyframes add
+{
+    0%{
+        height: 90px;
+        width: 90px;
+        transform: translateY(0px);
+        transform: scaleY(0);
+    }
+    50%{
+        height: 95px;
+        width: 95px;
+        transform: translateY(10px);
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+        transform: translateY(-10px);
+    }
+}
