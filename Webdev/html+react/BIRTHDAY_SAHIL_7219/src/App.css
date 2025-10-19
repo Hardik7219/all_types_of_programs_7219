@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+#btn{
+  transition: all 0.3s ease;
+  box-shadow: 10px 0px 10px 5px rgba(255, 10, 10, 0.2), -5px 0 0.4em rgb(0, 128, 117);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btn:hover{
+  transform: scale(1.1);
+  background-color: #041231;
+  color: white;
+  box-shadow: 10px 0px 10px 5px rgba(55, 65, 199, 0.2), -5px 0 0.4em rgb(190, 56, 134);
+}
